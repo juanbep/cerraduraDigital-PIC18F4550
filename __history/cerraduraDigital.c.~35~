@@ -1,0 +1,60 @@
+#include<18f4550.h> //pic
+#use delay(clock=20Mhz) //reloj interno del pic 
+#fuses hs, nowdt //fusibles 
+#include <lcd.c> //directivas 
+#include <kbd1.c>
+
+   int x = 1;
+   int i,y;
+   char k;
+   
+   char c[] = {'0','1','9','9','8'}; //arreglo con la contraseña de nuestra cerradura 
+   char d[] = {"00000"};
+   
+   
+  void main(){
+  
+       set_tris_A(0x00); //declarar el puerto A como salida 
+       lcd_init(); //iniciar el lcd 
+       kbd_init(); //iniciar el teclado matricial 
+       
+       port_b_pullups(true);
+       
+       do{
+         k = kbd_getc();  //valor del teclado matricial 
+         lcd_gotoxy(1,1);
+         printf(lcd_putc, "Ingresa la clave: ");
+         output_A(0x02);     //sistema apagado
+         
+         if((k!=0)&&(k!='#')&&(k!='*') ){
+            lcd_gotoxy(x,2);
+            printf(lcd_putc, "%c",k);
+            d[x]=k;
+            x++;
+         }
+         if((k!=0)&&(k=='*')){
+            i = 0;
+            for(i=0;i<5;i++){
+               
+               if(d[i]!=c[i]){
+               
+                  break;
+               }
+            
+            }
+            if (i==5){
+               do{
+                  k = kbd_getc();
+                  lcd_gotoxy(1,2);
+                  printf(lcd_putc, "ClAVE CORRECTA");
+                  output_A(0x01);
+               }while(k!='*');
+            }
+         }
+         
+       }while(true);
+  
+   
+  
+  }
+  

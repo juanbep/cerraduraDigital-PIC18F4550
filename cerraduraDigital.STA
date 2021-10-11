@@ -1,0 +1,64 @@
+
+ROM used:   1280/32768 (4%)
+            1280/32768 (4%) including unused fragments
+
+            0.8 Average locations per line
+            6.7 Average locations per statement
+
+RAM used:   26/2048 (1%) at main() level
+            36/2048 (2%) worst case
+
+Stack used: 5 worst case (5 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  111    63  33  cerraduraDigital.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+  456    84  44  C:\Program Files (x86)\PICC\Drivers\lcd.c
+  135    43  23  C:\Program Files (x86)\PICC\Drivers\kbd1.c
+----- -----
+ 1539   190 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     24   1    1    596  5.9  @delay_ms1
+0     60   2    3    596  5.9  lcd_read_byte
+0     12   0    0     59  4.2  lcd_read_nibble
+0     22   1    1    179  3.3  lcd_send_nibble
+0     58   2    3    460  4.7  lcd_send_byte
+0    128   5    6    814  7.2  lcd_init
+0     34   1    4    208  6.3  lcd_gotoxy
+0     84   3    1    354  4.7  lcd_putc
+0     32   1    0   5861 10.2  @const685
+0      4   0    0      3  0.0  kbd_init
+0    180   7    4   5861 10.2  kbd_getc
+0     34   1    0             @goto10682
+0    476  19    2   2118  9.3  MAIN
+0     20   1    0             @const708
+0     32   1    2             @PSTRINGC_672
+0     16   1    0             @const711
+0     22   1    0             @const712
+0     18   1    0             @const714
+0     20   1    0             @const718
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               12
+    Statements              190
+    Comments                290
+    Volume (V)              23322
+    Difficulty (D)          69.7
+    Effort to implement (E) 1625178
+    Time to implement (T)   25 hours, 5 minutes
+    Est Delivered Bugs (B)  5
+    Cyclomatic Complexity   45
+    Maintainability (MI)    135
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  1276  31488  
+
+
+

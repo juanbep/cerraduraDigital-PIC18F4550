@@ -1,0 +1,21 @@
+#include<18f4550.h> //pic
+#fuses hs, nowdt //fusibles 
+#use delay(clock=400000) //reloj interno del pic 
+#include <lcd.c> //directivas 
+#include <KBD1.C>
+
+void main(
+
+   char k;
+   int t;
+   
+   //comandos de inicio de nuestros componentes 
+   
+   lcd_init();
+   kbd();
+   
+
+
+
+
+)

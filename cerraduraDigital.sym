@@ -1,0 +1,120 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     kbd_getc.kbd_call_count
+005.0   kbd_getc.kbd_down
+006     kbd_getc.last_key
+007     kbd_getc.col
+008     x
+009     t
+00A     i
+00B     y
+00C     k
+00D-011 c
+012-017 d
+018     lcd_init.i
+018     kbd_getc.kchar
+018     MAIN.@SCRATCH1
+018     @PSTRINGC_672.@SCRATCH1
+019-01C lcd_init.LCD_INIT_STRING
+019     kbd_getc.row
+019     MAIN.@SCRATCH2
+019     @PSTRINGC_672.@SCRATCH2
+01A     lcd_putc.c
+01A     kbd_getc.@SCRATCH1
+01B     lcd_gotoxy.x
+01B     kbd_getc.@SCRATCH2
+01C     lcd_gotoxy.y
+01D     @delay_ms1.P1
+01D     lcd_gotoxy.address
+01D     lcd_init.@SCRATCH1
+01E     lcd_gotoxy.@SCRATCH1
+01F     lcd_send_byte.address
+020     lcd_send_byte.n
+021     lcd_read_byte.low
+021     lcd_send_byte.@SCRATCH1
+022     lcd_send_nibble.n
+022     lcd_read_byte.high
+023     lcd_read_byte.@SCRATCH1
+F81     kbd
+F83     PSP_DATA
+F83     lcd
+F8C     lcdlat
+F95     lcdtris
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  KEYS.call
+000014  KEYS.data
+000024  @const712.call
+00003A  @const708.call
+00004E  @const711.call
+00005E  @const714.call
+000070  @const718.call
+000084  @delay_ms1
+00009C  lcd_send_nibble
+0000B2  lcd_read_nibble
+0000BE  lcd_read_byte
+0000FA  lcd_send_byte
+000134  lcd_init
+0001B4  kbd_init
+0001B8  kbd_getc
+00026C  @goto10682
+00028E  lcd_gotoxy
+0002B0  lcd_putc
+000304  @PSTRINGC_672
+000324  @cinit1
+000324  MAIN
+000338  @cinit2
+
+Project Directory:
+    D:\Arquitectura Computacional\Proyecto Final\Cerradura Digital\
+
+Project Files:
+    cerraduraDigital.c                                      [09-oct.-21 22:36  CRC=63D5D8F5]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [18-abr.-14 16:57  CRC=68697302]
+    C:\Program Files (x86)\PICC\Drivers\lcd.c               [19-sept.-13 15:38  CRC=D1A6378A]
+    C:\Program Files (x86)\PICC\Drivers\kbd1.c              [09-oct.-21 10:41  CRC=ADACD6A8]
+
+Source signature=F93F30D1
+
+Units:
+    cerraduraDigital (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   cerraduraDigital.xsym
+    Errors:      cerraduraDigital.err
+    Ext Symbols: cerraduraDigital.esym
+    INHX32:      cerraduraDigital.hex
+    Symbols:     cerraduraDigital.sym
+    List:        cerraduraDigital.lst
+    Debug/COFF:  cerraduraDigital.cof
+    Project:     cerraduraDigital.ccspjt
+    Call Tree:   cerraduraDigital.tre
+    Statistics:  cerraduraDigital.STA

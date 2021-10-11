@@ -1,0 +1,44 @@
+[PROJECT]
+Target=cerraduraDigital.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.025
+Compiler=PCH
+[Target Data]
+FileList=cerraduraDigital.c
+[cerraduraDigital.c]
+Type=4
+[mru-list]
+1=cerraduraDigital.c
+
+[Opened Files]
+1=cerraduraDigital.c
+2=
+3=
+
+[ProjectLog]
+Days=2
+D1=09-10-2021
+D1_L=13
+D1_L1=[40875]Stopped Editing.
+D1_L2=[50565]Project Closed.
+D1_L3=[57301]Project Opened.
+D1_L4=[60648]Started Editing.
+D1_L5=[63957]Stopped Editing.
+D1_L6=[64204]Started Editing.
+D1_L7=[65351]Stopped Editing.
+D1_L8=[76600]Started Editing.
+D1_L9=[76925]Stopped Editing.
+D1_L10=[76953]Started Editing.
+D1_L11=[77337]Stopped Editing.
+D1_L12=[80499]Started Editing.
+D1_L13=[81683]Stopped Editing.
+TotalEdit=81
+TotalDebug=0
+D2=10-10-2021
+D2_E=81
+D2_D=0
+D2_L=1
+D2_L1=[71875]Project Closed.
+[Units]
+Count=1
+1=cerraduraDigital (main)
